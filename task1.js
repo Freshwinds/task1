@@ -1,7 +1,7 @@
 /**
  * Created by freshwinds on 17-7-11.
  */
-var student=[["小明","1","2","3","4"]];
+var student=[["小明","1","2","3","4"],["小花","2","3","4","5"]];
 var student_grade=new Array();//成绩信息  二维
 var sum_grade = new Array();//总分数组 一维
 var Sum_class=0;//全班总分
@@ -28,15 +28,19 @@ for(i=0;i<student.length;i++)
 }
 //2.计算全班总平均分
 var Avg_class,
-Avg_class=Sum_class/student.length;
+    Avg_class=Sum_class/student.length;
 
 //计算全班总分中位数
 
 var Middle_num;
 sum_grade.sort();
 var loc=parseInt(sum_grade.length/2);
-Middle_num=sum_grade[loc];
-
+if(sum_grade.length%2==1)
+    Middle_num=sum_grade[loc];
+else {
+     var sec=loc-1;
+     Middle_num = (sum_grade[loc] + sum_grade[sec]) / 2;
+     }
 
 //输出成绩单
 console.log("成绩单\n姓名|数学|语文|英语|编程|平均分|总分 \n =======================");
