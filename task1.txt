@@ -1,16 +1,21 @@
-1.计算平均分和总分
-input:[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”],......]:[[string,string,string,string,string],..]
-output:[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
+1.计算平均分和总分(10min)
+input:  
+student:[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”],......]:[[string,string,string,string,string],..]
+output:
+student_grade:[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
+sum_grade:   [总分1,总分2...]:[Number]
+sum_class:   sum(sum_grade):Number
 
-2.计算全班总平均分
-input：[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
-ouput:Avg_class:Number
 
-3.计算全班总分中位数
-input：[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
-ouput:Middle_class:Number2
+2.计算全班总平均分(1min)
+input：sum_class;
+ouput: Avg_class:sum_clsss/student.length;
 
-4.输出成绩单
+3.计算全班总分中位数(1min)
+input：sum_grade
+ouput:Middle_class:Number
+
+4.输出成绩单(15min)
 input:[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
        全班总平均分:Avg_class(Number),全班总分中位数：Middle_class(Number)
 ouput：string：
