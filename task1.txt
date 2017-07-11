@@ -1,0 +1,25 @@
+1.计算平均分和总分
+input:[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”],......]:[[string,string,string,string,string],..]
+output:[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
+
+2.计算全班总平均分
+input：[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
+ouput:Avg_class:Number
+
+3.计算全班总分中位数
+input：[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
+ouput:Middle_class:Number2
+
+4.输出成绩单
+input:[["姓名"，“语文成绩”，“英语成绩”，“数学成绩”，“编程成绩”,"平均分"，“总分”],......]:[[string,string,string,string,string，Number，Number],..]
+       全班总平均分:Avg_class(Number),全班总分中位数：Middle_class(Number)
+ouput：string：
+       “成绩单
+       姓名|数学|语文|英语|编程|平均分|总分
+	   =======================”
+	   "姓名"|“语文成绩”|“英语成绩”|“数学成绩”|“编程成绩”|"平均分"|“总分”：string"|"string"|"string"|"string"|"string"|"string"|"Number"|"Number
+       ....
+	   "======================"
+	   (String)"全班总平均分：" Number1
+	   (String)”全班总分中位数：" Number2
+	   
