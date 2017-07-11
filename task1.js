@@ -1,7 +1,7 @@
 /**
  * Created by freshwinds on 17-7-11.
  */
-var student=[["小明","1","2","3","4"],["小花","2","3","4","5"]];
+var student=[["张三","95","80","75","80"],["李四","80","70","85","90"]];
 var student_grade=new Array();//成绩信息  二维
 var sum_grade = new Array();//总分数组 一维
 var Sum_class=0;//全班总分
@@ -19,11 +19,12 @@ for(i=0;i<student.length;i++)
             num+=Number(student_grade[i][j]);
         }
     }
-    student_grade[i][j]=num;
+    student_grade[i][j]=num/4;
+
     sum_grade[i]=num;
     Sum_class+=num;
     j++;
-    student_grade[i][j]=num/4;
+    student_grade[i][j]=num;
 
 }
 //2.计算全班总平均分
@@ -56,7 +57,7 @@ for(i=0;i<student_grade.length;i++)
     console.log(str);
 }
 
-console.log("======================\n全班总平均分"+Avg_class);
+console.log("======================\n全班总平均分:"+Avg_class);
 console.log("全班总分中位数："+ Middle_num);
 
 
